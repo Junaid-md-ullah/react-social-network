@@ -1,0 +1,14 @@
+.people-container{
+     display:grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 50px;
+    background-color:#D3EAFC ;
+    padding:30px;
+    border-right:1px solid black;
+    width:800px
+}
+
+.cart-container{
+   display: grid;
+   grid-template-columns: 200px;
+}

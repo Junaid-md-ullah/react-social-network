@@ -1,0 +1,36 @@
+.each-people{
+    text-align: center;
+    border-radius: 5px ;
+    background-color: white;
+    width:200px;
+    box-shadow: 0 0 5px #d3d3d3;
+    padding:5px;
+    transition: width 0.5s;
+}
+.each-people:hover{
+    box-shadow: 0 0 10px #00A9ED;
+    width:210px;
+}
+
+.profile-img img{
+    border-radius: 100%;
+}
+
+.people-details{
+    line-height: 5px;
+}
+
+.people-details button{
+    border:none;
+    width:150px;
+    border-radius: 5px;
+    background-color:#EDFAFE;
+    color:#00A9ED;
+    height:30px;
+    cursor: pointer;
+}
+.people-details button:hover{
+    box-shadow: 0 0 10px #00A9ED;
+    background-color: #5353e2;
+    color:#fff
+}
