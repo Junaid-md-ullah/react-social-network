@@ -5,7 +5,9 @@
     background-color: gray;
 }
 
-.user-container{
-    text-align: justify;
-    background-color: gray;
+.user-container ul{
+    text-align:start;
+    background-color: #00A9ED;
+
+    
 }

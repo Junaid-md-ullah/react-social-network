@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './Cart.css';
 const Cart = (props) => {
     const cart=props.cart;
@@ -22,15 +24,18 @@ const Cart = (props) => {
             <h5>Total Neighbours: {props.cart.length}</h5>
             <h5>Neighbours Total Monthly Income: ${total}</h5>
             <h4>Social Fund-Raised: ${totalFund}</h4>
+            <h2>Donors List:</h2>
         {
             cart.map(user=>{
                 return(
                     <div className="user-container">
                        <ul>
-                       <li>{user.name} ({user.salary})</li>
+                       <li><small>{user.name} (${user.salary})<FontAwesomeIcon onClick={()=>props.handleAddPeople(user,'disconnect')}  icon={faTrash} /></small></li>
+                      
                        </ul>
-                        
+                       <hr/>
                  </div>
+                 
                 )
             })
         }
