@@ -1,0 +1,11 @@
+.cart-details{
+    text-align: center;
+}
+.cart-details h3{
+    background-color: gray;
+}
+
+.user-container{
+    text-align: justify;
+    background-color: gray;
+}

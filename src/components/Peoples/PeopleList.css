@@ -1,14 +1,14 @@
 .people-container{
-     display:grid;
-    grid-template-columns: 200px 200px 200px;
-    gap: 50px;
-    background-color:#D3EAFC ;
-    padding:30px;
-    border-right:1px solid black;
-    width:800px
-}
-
-.cart-container{
+   background-color: #fff;
    display: grid;
-   grid-template-columns: 200px;
+   grid-template-columns: 80% auto;
+}
+.people{
+   display:grid;
+   grid-template-columns: 200px 200px 200px;
+   gap: 50px;
+   background-color:#D3EAFC ;
+   padding:30px;
+   border-right:2px solid gray;
+   width:800px
 }

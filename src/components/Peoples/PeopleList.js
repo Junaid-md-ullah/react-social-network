@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './PeopleList.css';
 import {useState} from 'react';
 import EachPeople from '../EachPeople/EachPeople';
@@ -42,12 +42,14 @@ const PeopleList = () => {
     }
     return (
         <div className="people-container">
-            
-                {
+            <div className="people">
+            {
                     peoples.map(people=><EachPeople people={people} handleAddPeople={handleAddPeople}></EachPeople>)
-                }
+            }
+            </div>
+                
 
-            <div className="cart-container">
+            <div>
                 <Cart cart={cart}></Cart>
             </div>
         </div>
